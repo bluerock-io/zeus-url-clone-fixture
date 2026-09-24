@@ -1,0 +1,5 @@
+# TENANT-SUPPLIED attributes. `-diff` marks every path binary to git, which
+# suppresses diff output; Zeus must strip the suppressing tokens so prescan and
+# gitleaks history analysis still see real diffs.
+* -diff
+*.ts -diff

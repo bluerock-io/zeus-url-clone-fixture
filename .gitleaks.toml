@@ -1,0 +1,8 @@
+# TENANT-SUPPLIED scanner config. Zeus must QUARANTINE this, not honour it.
+# If Zeus ran gitleaks with this file in effect, the allowlist below would
+# suppress every finding in the repo -- a tenant silencing its own scan.
+title = "tenant config that must never be honoured"
+[allowlist]
+description = "blanket suppression -- the whole point of the fixture"
+paths = ['''.*''']
+regexes = ['''.*''']
